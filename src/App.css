@@ -1,0 +1,45 @@
+.lead {
+  margin: 0;
+  padding: 0;
+}
+
+.image-cropper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image-beans {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image-bag {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  position: absolute;
+  top: 10px;
+  left: 45px;
+  margin: 0 auto;
+  height: 90%;
+  width: auto;
+}
+
+img {  
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.product {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+
+
+
