@@ -1,6 +1,62 @@
+.effect-underline {
+  color: #041433;
+  display: inline-block;
+  position: relative;
+  transition: .3s;
+}
+
+h1 a:link { text-decoration: none; }
+h1 a:visited { text-decoration: none; }
+h1 a:hover { 
+  color: rgb(95, 91, 91);
+  font-size: 105%;
+}
+
+a.effect-underline:after {
+  text-decoration: none;
+	content: '';
+  position: absolute;
+  left: -5%;
+  display: inline-block;
+  height: 1em;
+  width: 110%;
+  border-bottom: 4px solid #0066f9;
+  margin-top: 15px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  text-decoration: none;
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
 .lead {
   margin: 0;
   padding: 0;
+}
+
+.product {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  outline: 1px solid white;
+  border-radius: 30px;
+}
+
+.product:hover {
+  outline: 2px solid rgb(194, 194, 194);
+  outline-offset: 5px;
+  transition: .3s;
+  border-radius: 30px;
+}
+.product:hover .title{
+  text-decoration: underline;
 }
 
 .image-cropper {
@@ -11,10 +67,11 @@
   border-radius: 50%;
 }
 
-.image-beans {
+.image-background {
   position: relative;
   top: 0;
   left: 0;
+  filter: brightness(85%);
 }
 
 .image-bag {
@@ -35,11 +92,12 @@ img {
   width: auto;
 }
 
-.product {
-  display: grid;
-  place-items: center;
-  justify-content: center;
+.btn {
+  border-radius: 20px;
+  border: none;
 }
 
-
+.btn:hover {
+  background-color: rgb(123, 207, 123);
+}
 
