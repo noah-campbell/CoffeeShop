@@ -103,7 +103,7 @@ img {
 .postForm {
   display: grid;
   width: 80%;
-  place-items: center;
+  place-items: center start;
   margin: auto;
 }
 
@@ -124,4 +124,12 @@ img {
 
 .postBtn:hover {
   background-color: rgb(123, 207, 123);
+}
+
+.forumName {
+  color: blue;
+}
+
+.commentImg {
+  border-radius: 50%;
 }

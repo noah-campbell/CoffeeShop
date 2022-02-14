@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import Ably from "./Ably"
 import axios from "axios";
+import { withAuth0 } from '@auth0/auth0-react';
+
 
 class CommentBox extends Component {
   constructor(props) {
@@ -33,39 +35,32 @@ class CommentBox extends Component {
     }
   }
 
+  
+
   render() {
+    const { user } = this.props.auth0;
+
     return (
       <div>
-        <h1 className="title">Please leave your feedback below</h1>
-        <form onSubmit={this.addComment}>
-          <div className="field">
-            <div className="control">
-              <input
+        <h1 className="display-4">Hey, <span className="forumName">{user.nickname}</span>!</h1> 
+        <p className="form-text mb-4">leave a comment to join the recent coffee conversation</p>
+        <form onSubmit={this.addComment} className="postForm">
+            <input
                 type="text"
-                className="input"
+                className="form-control mb-2 topic"
                 name="name"
-                placeholder="Your name"
-              />
-            </div>
-          </div>
-          <div className="field">
-            <div className="control">
-              <textarea
-                className="textarea"
+                placeholder="Title..."
+            />
+            <textarea
+                className="form-control mb-2 comment"
                 name="comment"
                 placeholder="Add a comment"
-              ></textarea>
-            </div>
-          </div>
-          <div className="field">
-            <div className="control">
-              <button className="button is-primary">Submit</button>
-            </div>
-          </div>
+            ></textarea>
+            <button className="btn btn-primary mb-5 postBtn" type="submit">Submit</button>
         </form>
       </div>
     )
   }
 }
 
-export default CommentBox
+export default withAuth0(CommentBox);

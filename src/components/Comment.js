@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withAuth0 } from '@auth0/auth0-react';
 
 class Comment extends Component {
   constructor(params) {
@@ -18,23 +19,29 @@ class Comment extends Component {
     return localeString
   }
   render() {
+    const { user } = this.props.auth0;
+
     return (
-      <article className="media">
-        <figure className="media-left">
-          <p className="image is-64x64">
-            <img alt="dog pic" src={this.props.comment.avatar} />
-          </p>
-        </figure>
-        <div className="media-content">
-          <div className="content">
-            <span className="message-date">{this.messageDate}</span>
-            <h5 className="user-name">{this.props.comment.name} </h5>
-            <p>{this.props.comment.comment}</p>
-          </div>
-        </div>
-      </article>
+        <article className="media card p-3 mb-2">
+            <figure className="d-flex justify-content-between align-items-center">
+            <p className="image is-64x64">
+                <img alt="dog pic" src={user.picture} />
+                <h4>{user.nickname}</h4>
+                <h5 className="user-name card-link">{this.props.comment.name} </h5>
+            </p>
+            </figure>
+            <div className="media-content card-body">
+            <div className="content">
+                
+                <p className="card-text">{this.props.comment.comment}</p>
+                <div class="card-footer">
+                    <span className="message-date text-muted">{this.messageDate}</span>
+                </div>
+            </div>
+            </div>
+        </article>
     )
   }
 }
 
-export default Comment
+export default withAuth0(Comment);
