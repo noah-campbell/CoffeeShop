@@ -5,9 +5,9 @@ const Hero = () => (
   <div className="text-center hero my-5">
     
     <h1 className="mb-4">
-      <Link to="/Shop" className="effect-underline">Shop</Link>{" "}
+      <Link to="/Shop" className="effect-underline shop">Shop</Link>{" "}
       and 
-      {" "}<Link to="/Forum" className="effect-underline">Talk</Link>{" "}
+      {" "}<Link to="/Forum" className="effect-underline talk">Talk</Link>{" "}
         Coffee
     </h1>
     <p>

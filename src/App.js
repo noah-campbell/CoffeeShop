@@ -26,9 +26,10 @@ const App = () => {
   if (isLoading) {
     return <Loading />;
   }
-
+ 
   return (
-    <Router history={history}>
+    
+    <Router history={history} forceRefresh={true}>
       <div id="app" className="d-flex flex-column h-100">
         <NavBar />
         <Container className="flex-grow-1 mt-5">

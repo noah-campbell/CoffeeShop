@@ -3,7 +3,11 @@ import Content from "../components/Content";
 import Blends from "../components/Blends";
 
 const Shop = () => (
-    <><Content /><Blends /></>
+    <>
+    <h1>Shop all coffees</h1>
+    <Content />
+    <Blends />
+    </>
 );
 
 export default Shop;
