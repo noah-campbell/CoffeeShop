@@ -22,7 +22,7 @@ class Content extends Component {
               <h5>
                 {col.price}
               </h5>
-              <button className="btn btn-success">Add to cart</button>
+              <button className="btn btn-success addToCart">Add to cart</button>
             </Col>
           ))}
         </Row>

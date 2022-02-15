@@ -4,7 +4,7 @@ import Blends from "../components/Blends";
 
 const Shop = () => (
     <>
-    <h1>Shop all coffees</h1>
+    <h1 className="display-4">Shop all coffees</h1>
     <Content />
     <Blends />
     </>

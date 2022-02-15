@@ -22,24 +22,22 @@ class Comment extends Component {
     const { user } = this.props.auth0;
 
     return (
-        <article className="media card p-3 mb-2">
-            <figure className="d-flex justify-content-between align-items-center">
-            <p className="image is-64x64">
-                <img alt="dog pic" src={user.picture} />
-                <h4>{user.nickname}</h4>
-                <h5 className="user-name card-link">{this.props.comment.name} </h5>
-            </p>
-            </figure>
-            <div className="media-content card-body">
-            <div className="content">
-                
-                <p className="card-text">{this.props.comment.comment}</p>
-                <div class="card-footer">
-                    <span className="message-date text-muted">{this.messageDate}</span>
+      <div className="container commentBox">
+        <article className="p-3 mb-3">
+            <figure className="row">
+              <div className="col-8 row">
+                <img alt={user.name} src={user.picture} className="align-baseline commentImg mx-0" />
+                <h6 className="align-baseline ml-2 my-auto">{user.given_name}</h6>
+              </div>
+              <div class="col-4 my-auto">
+                    <span className="text-muted float-right">{this.messageDate}</span>
                 </div>
-            </div>
+            </figure>
+            <div className="row"> 
+              <p className="align-middle ml-4">{this.props.comment.comment}</p>
             </div>
         </article>
+      </div>
     )
   }
 }

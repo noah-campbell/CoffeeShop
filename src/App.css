@@ -67,6 +67,10 @@ a.effect-underline:hover:after {
   text-decoration: underline;
 }
 
+.addToCart {
+  border-radius:  8px;
+}
+
 .image-cropper {
   width: 200px;
   height: 200px;
@@ -132,4 +136,15 @@ img {
 
 .commentImg {
   border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+
+.commentBox {
+  width: 80%;
+  background-color: rgb(11, 7, 31);
+  border: none;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  border-radius: 8px;
+  color: white;
 }

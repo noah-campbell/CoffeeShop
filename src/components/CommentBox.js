@@ -13,7 +13,7 @@ class CommentBox extends Component {
   async addComment(e) {
     e.preventDefault()
     const comment = e.target.elements.comment.value.trim()
-    const name = e.target.elements.name.value.trim()
+    
     const timestamp = Date.now()
 
     // Retrieve a random image from the Dog API
@@ -21,9 +21,9 @@ class CommentBox extends Component {
       await axios.get("https://dog.ceo/api/breeds/image/random")
     ).data.message
 
-    if (name && comment) {
+    if ( comment) {
       // include the avatar image in the commentObject
-      const commentObject = { name, comment, timestamp, avatar }
+      const commentObject = { comment, timestamp, avatar }
       console.log(commentObject)
 
       const channel = Ably.channels.get("comments")
@@ -42,15 +42,9 @@ class CommentBox extends Component {
 
     return (
       <div>
-        <h1 className="display-4">Hey, <span className="forumName">{user.nickname}</span>!</h1> 
+        <h1 className="display-4">Hey, <span className="forumName">{user.given_name}</span>!</h1> 
         <p className="form-text mb-4">leave a comment to join the recent coffee conversation</p>
         <form onSubmit={this.addComment} className="postForm">
-            <input
-                type="text"
-                className="form-control mb-2 topic"
-                name="name"
-                placeholder="Title..."
-            />
             <textarea
                 className="form-control mb-2 comment"
                 name="comment"
