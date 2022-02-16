@@ -10,9 +10,9 @@ authentication implemented using Auth0.
 Discussion board for authorized users implemented with Ably.
 
 
-<a href="URL_REDIRECT" target="blank"><img align="center" src="./images/homePage" height="100" /></a>
-<a href="URL_REDIRECT" target="blank"><img align="center" src="./images/loginPage" height="100" /></a>
-<a href="URL_REDIRECT" target="blank"><img align="center" src="./images/discussionForum" height="100" /></a>
+<a href="URL_REDIRECT" target="blank"><img align="center" src="/images/homePage.png" height="100" /></a>
+<a href="URL_REDIRECT" target="blank"><img align="center" src="./images/loginPage.png" height="100" /></a>
+<a href="URL_REDIRECT" target="blank"><img align="center" src="../discussionForum.png" height="100" /></a>
 
 
 ### Dependencies
