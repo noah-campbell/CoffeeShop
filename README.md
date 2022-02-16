@@ -9,14 +9,18 @@ front-end with React.
 authentication implemented using Auth0.
 Discussion board for authorized users implemented with Ably.
 
-## Getting Started
+
+<a href="URL_REDIRECT" target="blank"><img align="center" src="./images/homePage" height="100" /></a>
+<a href="URL_REDIRECT" target="blank"><img align="center" src="./images/loginPage" height="100" /></a>
+<a href="URL_REDIRECT" target="blank"><img align="center" src="./images/discussionForum" height="100" /></a>
+
 
 ### Dependencies
 
 * Ably, Axios, Cors, Express, Express-jwt, React
     
 
-### Installing
+### Getting Started
 
 * Clone repository
 * Make an Account with Ably, save your API key

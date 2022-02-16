@@ -13,6 +13,10 @@
   color: blue;
 }
 
+.login {
+  border-radius: 8px;
+}
+
 h1 a:link { text-decoration: none; }
 h1 a:visited { text-decoration: none; }
 h1 a:hover { 
