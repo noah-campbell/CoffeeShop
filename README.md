@@ -11,8 +11,8 @@ Discussion board for authorized users implemented with Ably.
 
 
 <a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/homePage.png" target="blank"><img align="center" src="/images/homePage.png" height="200" /></a>
-<a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/loginPage.png" target="blank"><img align="center" src="/images/loginPage.png" height="300" /></a>
-<a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/discussionForum.png" target="blank"><img align="center" src="/images/discussionForum.png" height="400" /></a>
+<a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/loginPage.png" target="blank"><img align="center" src="/images/loginPage.png" height="auto" /></a>
+<a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/discussionForum.png" target="blank"><img align="center" src="/images/discussionForum.png" height="100%" /></a>
 
 
 ### Dependencies
