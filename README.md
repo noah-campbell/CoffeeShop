@@ -9,8 +9,7 @@ front-end with React.
 authentication implemented using Auth0.
 Discussion board for authorized users implemented with Ably.
 
-![CoffeeShop](https://user-images.githubusercontent.com/18235372/155862209-ca044959-73c5-42a8-b7eb-7e053401897e.jpg)
-
+![coffeeShop](https://user-images.githubusercontent.com/18235372/155862384-7609edf3-eab6-4abb-9540-9c655c368aac.gif)
 
 <a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/homePage.png" target="blank"><img align="center" src="/images/homePage.png" height="auto" /></a>
 
