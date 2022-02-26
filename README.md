@@ -11,15 +11,6 @@ Discussion board for authorized users implemented with Ably.
 
 ![coffeeShop](https://user-images.githubusercontent.com/18235372/155862384-7609edf3-eab6-4abb-9540-9c655c368aac.gif)
 
-<a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/homePage.png" target="blank"><img align="center" src="/images/homePage.png" height="auto" /></a>
-
-
-<a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/loginPage.png" target="blank"><img align="center" src="/images/loginPage.png" height="auto" /></a>
-
-
-<a href="https://github.com/noah-campbell/CoffeeShop/blob/master/images/discussionForum.png" target="blank"><img align="center" src="/images/discussionForum.png" height="auto" /></a>
-
-
 ### Dependencies
 
 * Ably, Axios, Cors, Express, Express-jwt, React
